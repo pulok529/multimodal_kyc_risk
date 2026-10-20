@@ -1,0 +1,14 @@
+artifacts/
+data/
+__pycache__/
+*.pyc
+.venv/
+*.pt
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
