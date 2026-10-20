@@ -182,8 +182,13 @@ def _generate_ablation_chart(
     bars = ax.bar(labels, values, color=colors, width=0.55, edgecolor="#1E293B", linewidth=1.5)
     ax.set_ylim(0.0, 1.05)
     ax.set_ylabel("PR-AUC (Precision-Recall Area)", color="#F8FAFC", fontsize=11, labelpad=10)
-    ax.set_title("KYC Fraud Detection Ablation: Multimodal vs Single Modality",
-                 color="#F8FAFC", fontsize=13, fontweight="bold", pad=15)
+    ax.set_title(
+        "KYC Fraud Detection Ablation: Multimodal vs Single Modality",
+        color="#F8FAFC",
+        fontsize=13,
+        fontweight="bold",
+        pad=15,
+    )
 
     ax.tick_params(colors="#94A3B8", labelsize=10)
     for spine in ax.spines.values():

@@ -112,9 +112,7 @@ def render_document(
     return np.clip(arr, 0.0, 255.0).astype(np.uint8)
 
 
-def generate(
-    n: int = 6000, seed: int = 3
-) -> tuple[np.ndarray, pd.DataFrame, np.ndarray]:
+def generate(n: int = 6000, seed: int = 3) -> tuple[np.ndarray, pd.DataFrame, np.ndarray]:
     """Generate synthetic multimodal KYC dataset.
 
     Args:
